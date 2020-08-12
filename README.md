@@ -1,7 +1,7 @@
 <p align="center">
   <img width="460" height="300" src="https://tricolortimes.com/wp-content/uploads/2020/02/Reviews_Larsen-Whitnie_TikTok.svg">
 
-# ---------->     The TikTik Bot (Work-In Progress!)      <---------
+#       ---------->     The TikTik Bot (Work-In Progress!)      <------------
 
 <b><p align="center">Disclaimer: This bot is for educational purposes, only.</p></b>
 
