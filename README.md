@@ -1,15 +1,11 @@
 <p align="center">
   <img width="460" height="300" src="https://tricolortimes.com/wp-content/uploads/2020/02/Reviews_Larsen-Whitnie_TikTok.svg">
-</p>
-<p align="center">
-<h1>
-  The TikTik Bot(s)
-</h1>
-</p>
 
-<p align="center"><b>Disclaimer: This bot is for educational purposes, only.</b></p>
+# ------------->     The TikTik Bot (Work-In Progress!)      <---------
 
-# How to run the programs.
+<b><p align="center">Disclaimer: This bot is for educational purposes, only.</p></b>
+
+# How to run the program(s)
 
 * Install file from .zip
 * Make Sure pip is added to PATH
@@ -41,7 +37,7 @@ pip install etc. etc.
 ```
 *Once you do this you'll finally be good to go!*
 
-## To-Do:
+# To-Do:
 
 - [ ] Implement the multiprocessing module for the ability to trigger two ports at once
 - [ ] Complete Documentation
@@ -50,7 +46,7 @@ pip install etc. etc.
 - [ ] Incooperate another bot object, that runs inline with the main bot.
 - [ ] Finish refactoring the old share bot. 
 
-## License
+# License
 
 [![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org)
 
