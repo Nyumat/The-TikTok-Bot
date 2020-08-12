@@ -40,11 +40,11 @@ pip install etc. etc.
 # To-Do:
 
 - [ ] Implement the multiprocessing module for the ability to trigger two ports at once
-- [ ] Complete Documentation
+- [x] Complete Documentation
 - [ ] Add captcha bypass in selenium version
 - [ ] Create a system for scraping proxies from the ![freeproxylist.net](freeproxylist.net) website
 - [ ] Incooperate another bot object, that runs inline with the main bot.
-- [ ] Finish refactoring the old share bot. 
+- [x] Finish refactoring the old share bot. 
 
 # License
 
