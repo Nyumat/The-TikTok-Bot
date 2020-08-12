@@ -3,32 +3,44 @@ import random
 import requests
 import threading
 from time import strftime, gmtime, time, sleep
+from bs4 import BeautifulSoup
 
+                                                         print("          ████████▀▀▀████        ")
+                                                         print("          ████████────▀██        ")
+                                                         print("          ████████──█▄──█        ")
+                                                         print("          ███▀▀▀██──█████        ")
+                                                         print("          █▀──▄▄██──█████        ")
+                                                         print("          █──█████──█████        ")
+                                                         print("          █▄──▀▀▀──▄█████        ")
+                                                         print("          ███▄▄▄▄▄███████        ")
+                                                         print("          ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀        ")
 
-class TikTok:
+class TikTokBot:
+    #A reverse engineering attempt of the orginal bot by Tqkn.    
     def __init__(self):
-
-        print("  _________.__                                  ___.           __ ")
-        print(" /   _____/|  |__ _____ _______   ____   ______ \_ |__   _____/  |_ ")
-        print(" \_____  \ |  |  \\__  \\_  __ \_/ __ \ /  ___/  | __ \ /  _ \   __\ ")
-        print(" /        \|   Y  \/ __ \|  | \/\  ___/ \___ \   | \_\ (  <_> )  |  ")
-        print("/_______  /|___|  (____  /__|    \___  >____  >  |___  /\____/|__|  ")
-        print("        \/      \/     \/            \/     \/       \/      ")
-
+        self.start_time = time()
         self.added = 0
         self.lock = threading.Lock()
 
-        try:
-            self.amount = int(input('> Enter the Amount of shares desired: '))
+        try:                                            
+            self.amount = int(input('> View Count: '))
         except ValueError:
-            self.close('Value error, expected an integer')
-
+            self.close('Integer expected.')
         try:
-            self.video_id = input('> TikTok Video URL: ').split('/')[5]
+            self.video_id = input('> TikTok Video Url: ').split('/')[5]
         except IndexError:
             self.close(
                 'Invalid TikTok URL format.\nFormat expected: https://www.tiktok.com/@username/vide'
                 'o/1234567891234567891'
+        try:
+            self.views = int(input("> Enter an amount of Views: '))
+        except ValueError:
+            self.close("Integer expected.")
+                try:
+                    self.reload_do = self.lock = threading.Lock()
+                except scriptError: 
+                    self.close("Please reload the Client.")
+                
             )
         else:
             if not self.video_id.isdigit():
@@ -41,15 +53,17 @@ class TikTok:
 
     def close(self, message):
         print(f'\n{message}')
-        os.system("title Tqkn's TikTok SharesBot - Restart required")
+        os.system('title [The TikTok Bot] - Restart required')
         os.system('pause >NUL')
-        os.system("title Tqkn's TikTok SharesBot - Closing...")
+        os.system('title [The TikTok Bot] - Exiting...')
         sleep(3)
         os._exit(0)
 
     def status(self, code, intention):
         if code == 200:
             self.added += 1
+            print(f'Adding Views: {intention} | {views} have been added')
+            self.close('Bot run in Progress...')
         else:
             self.lock.acquire()
             print(f'Error: {intention} | Status Code: {code}')
@@ -69,37 +83,35 @@ class TikTok:
                 )
             )
             os.system(
-                f"title Tqkn's TikTok SharesBot - Added: {self.added} Shares/{self.amount} Shares "
+                f'title [The TikTok Bot] - Added: {self.added}/{self.amount} '
                 f'({round(((self.added / self.amount) * 100), 3)}%) ^| Active Threads: '
                 f'{threading.active_count()} ^| Time Remaining: {time_remaining}'
             )
             sleep(0.2)
         os.system(
-            f"title Tqkn's TikTok SharesBot - Added: {self.added}/{self.amount} "
+            f'title [The TikTok Bot] - Added: {self.added}/{self.amount} '
             f'({round(((self.added / self.amount) * 100), 3)}%) ^| Active Threads: '
             f'{threading.active_count()} ^| Time Remaining: 00:00:00'
         )
 
     def bot(self):
-        
-        if self.added > 0:
-            print(f"{self.added} Shares have been added!")
-            
         action_time = round(time())
         device_id = ''.join(random.choice('0123456789') for _ in range(19))
 
         data = (
-            f'action_time={action_time}&item_id={self.video_id}&item_type=1&share_delta=1&stats_channel=copy'
+            f'action_time={action_time}&item_id={self.video_id}&item_type=1&play_delta=1&stats_cha'
+            'nnel=copy'
         )
         headers = {
             'Content-Type': 'application/x-www-form-urlencoded',
             'x-common-params-v2': 'version_code=16.6.5&app_name=musical_ly&channel=App%20Store&devi'
                                   f'ce_id={device_id}&aid=1233&os_version=13.5.1&device_platform=ip'
                                   'hone&device_type=iPhone10,5',
-            'User-Agent': 'TikTok 16.6.5 rv:166515 (iPhone; iOS 13.6; en_US) Cronet',
+            'User-Agent': 'TikTok 16.6.5 rv:166515 (iPhone; iOS 13.6; sv_SE) Cronet'
         }
 
         try:
+              # Need access to this wrapper. Not having it contributes to the slow process.
             response = requests.post(
                 'https://api16-core-c-useast1a.tiktokv.com/aweme/v1/aweme/stats/?ac=WIFI&op_region='
                 'SE&app_skin=white&', data=data, headers=headers
@@ -114,21 +126,41 @@ class TikTok:
                 self.bot()
 
     def start(self):
-        self.start_time = time()
         threading.Thread(target=self.update_title).start()
 
         for _ in range(self.amount):
             while True:
                 if threading.active_count() <= 300:
                     threading.Thread(target=self.bot).start()
-                    break
+                    break if: # Views have more breakpoints
+                             self.bot(closed)
+                             self.added(true)
+                             self.lock = threading.Lock()
+                             self.views = (self.added, self)
+                                if os.system(running == true):
+                                      self.close(f'{views}Views  have been added to the Video')
 
         os.system('pause >NUL')
-        os.system("title Tqkn's TikTok SharesBot - Closing...")
+        os.system('title [TikTok Bot] - Exiting...')
         sleep(3)
-
-
+                             
+                             
+   # Scraping Solution from free proxy list that I have tested. It uses bs4 but there's really nothing that can parse HTML better imo.
+   # Proxies are needed because with multi processing / threading we can speed up the process of sending the views.
+                             
+                             
+     def scrapeProxyList(list_printing):
+           res = requests.get('https://free-proxy-list.net/', headers={ 'User-Agent': 'Mozilla 5.0 (iPhone; iOS 13.6; sv_SE)})
+           soup = BeautifulSoup(res.text,"lxml")
+           for items in soup.select("#proxylisttable tbody tr"):
+           proxy_list = ':'.join([item.text for item in items.select("td")[:2]])
+           empty_list = []
+           for proxy in  proxy_list: 
+               while(list_printing == true):                                                         
+                  empty_list.append(proxy_list)                                                         
+                                                                   
 if __name__ == '__main__':
-    os.system("cls && title Tqkn's TikTok SharesBot")
+    os.system('cls && title [The TikTok Bot]')
     main = TikTok()
+    main.scrapeProxyList(1 || 2)
     main.start()
