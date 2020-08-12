@@ -1,11 +1,14 @@
+<p align="center"><b><h1>The Tik Tok Bot.<h1></b></p>
+
+**This bot is for educational purposes, only.**
+
+# How to run
 <p align="center">
-  The Tik Tok Bot.
+• Install file from .zip
+• Make Sure pip is added to PATH
+• Run setup.py if you don't have the required modules
+• Download 
 </p>
-
-
-
-
-
 
 
 
