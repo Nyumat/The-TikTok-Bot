@@ -42,7 +42,7 @@ pip install etc. etc.
 - [ ] Implement the multiprocessing module for the ability to trigger two ports at once
 - [x] Complete Documentation
 - [ ] Add captcha bypass in selenium version
-- [ ] Create a system for scraping proxies from the ![freeproxylist.net](freeproxylist.net) website
+- [ ] Create a system for scraping proxies from the [freeproxylist.net](freeproxylist.net) website
 - [ ] Incooperate another bot object, that runs inline with the main bot.
 - [x] Finish refactoring the old share bot. 
 
