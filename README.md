@@ -1,4 +1,5 @@
-<p align="center"![](tiktok_logo.png)
+<p align="center">
+  The Tik Tok Bot.
 </p>
 
 
