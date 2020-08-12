@@ -1,8 +1,13 @@
 <p align="center">
   <img width="460" height="300" src="https://tricolortimes.com/wp-content/uploads/2020/02/Reviews_Larsen-Whitnie_TikTok.svg">
 </p>
+<p align="center">
+<h1>
+  The TikTik Bot(s)
+</h1>
+</p>
 
-**Disclaimer: This bot is for educational purposes, only.**
+<p align="center"><b>Disclaimer: This bot is for educational purposes, only.</b></p>
 
 # How to run the programs.
 
