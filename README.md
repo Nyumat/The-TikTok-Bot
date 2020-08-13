@@ -43,6 +43,7 @@ pip install etc. etc.
 
 # To-Do's:
 
+- [ ] Add GUI to the script so that threads can be user limited.
 - [ ] Implement the multiprocessing module for the ability to trigger two ports at once
 - [x] Complete Documentation
 - [ ] Add captcha bypass in selenium version
