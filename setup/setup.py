@@ -18,5 +18,5 @@ def installLibraries():
           
 installLibraries()
           
-print('\n'+'Required Libraries are now installed.')
-system('pause >NUL')
+print(f'\n'+'Required Libraries are now installed.')
+os.exit()
