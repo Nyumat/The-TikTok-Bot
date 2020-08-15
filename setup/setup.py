@@ -16,6 +16,7 @@ def installLibraries():
    system('pip install ActionsChains')
    system('pip install pygame')
    system('pip install sys')
+   system('pip install multiprocessing')
           
 installLibraries()
           
