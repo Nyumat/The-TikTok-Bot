@@ -213,7 +213,7 @@ if __name__ == '__main__':
             sleep(5)
             for proxy in proxy_count:
                proxt_list = ':'.join([proxy_list.text for item in proxy_count.select(ip)])                  
-               f'{ip} is being added.'
+               f'{ip} is being added as a proxy.'
                print(timer.time_remaining())                                                   
                time.sleep(0.1)                                                   
     main.start()
