@@ -1,4 +1,5 @@
 import os
+import sys
 import random
 import requests
 import threading
@@ -15,6 +16,9 @@ from bs4 import BeautifulSoup
                                                          print("          ███▄▄▄▄▄███████        ")
                                                          print("          ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀        ")
 
+                  
+                  
+                  
 class TikTokBot:
     #A reverse engineering attempt of the orginal bot by Tqkn.    
     def __init__(self):
@@ -71,7 +75,28 @@ class TikTokBot:
             self.bot()
 
     def update_title(self):
-        # Avoid ZeroDivisionError
+       # Avoid ZeroDivisionError
+                             
+       # Prompts the user to either run again                    
+       while time_remaining = '00:00:00'
+            os.system(
+                 f'title {views} Views have been added.)'
+                 f'title [The TikTok bot is done running.]'
+                 f'[Iff you would like to run once again, please type "Run again"]'
+                 f'[If you will like to exit the client, please type "Exit"]'
+              input = input()
+                  if input == "Run again":
+                        os.system(
+                             main = TikTok()
+                             # Proxy list will be an object soon so it doesn't need to be called as inside of this if statement.
+                             main.scrapeProxyList(1 || 2)
+                             main.start()
+                             sleep(5)
+                  else if input == "Exit: 
+                        self.close("Goodbye!")
+                        os.times(user)
+                        sleep(3)
+                        os._exit(1)                                    
         while self.added == 0:
             sleep(0.2)
 
@@ -131,36 +156,49 @@ class TikTokBot:
         for _ in range(self.amount):
             while True:
                 if threading.active_count() <= 300:
-                    threading.Thread(target=self.bot).start()
+                  threading.Thread(target=self.bot).start()
                     break if: # Views have more breakpoints
-                             self.bot(closed)
-                             self.added(true)
-                             self.lock = threading.Lock()
-                             self.views = (self.added, self)
-                                if os.system(running == true):
-                                      self.close(f'{views}Views  have been added to the Video')
+                            self.bot(closed)
+                            self.added(true)
+                            self.lock = threading.Lock()
+                            self.views = (self.added, self)
+                               if os.system(running == true):
+                                    self.close(f'{views} || Views  have been added to the Video')
 
         os.system('pause >NUL')
         os.system('title [TikTok Bot] - Exiting...')
-        sleep(3)
-                             
-                             
-   # Scraping Solution from free proxy list that I have tested. It uses bs4 but there's really nothing that can parse HTML better imo.
-   # Proxies are needed because with multi processing / threading we can speed up the process of sending the views.
-                             
-                             
+        sleep(3)                 
+                                           
      def scrapeProxyList(list_printing):
+                          
+     # Scraping Solution from free proxy list that I have tested. It uses bs4 but there's really nothing that can parse HTML better imo
+     # Proxies are needed because with multi processing / threading we can speed up the process of sending the views.
+                          
            res = requests.get('https://free-proxy-list.net/', headers={ 'User-Agent': 'Mozilla 5.0 (iPhone; iOS 13.6; sv_SE)})
            soup = BeautifulSoup(res.text,"lxml")
-           for items in soup.select("#proxylisttable tbody tr"):
-           proxy_list = ':'.join([item.text for item in items.select("td")[:2]])
-           empty_list = []
-           for proxy in  proxy_list: 
-               while(list_printing == true):                                                         
-                  empty_list.append(proxy_list)                                                         
-                                                                   
+                  for items in soup.select("#proxylisttable tbody tr"):                                                    
+                       proxy_list = ':'.join([item.text for item in items.select("td")[:2]])
+                       empty_list = []
+                       proxy_count = proxylist.count                                                
+                  for proxy in  proxy_list: 
+                        while(list_printing == true):                                                         
+                        empty_list.append(proxy_list)                                                         
+ 
+                                                                       
+# Client & Program initializer.                                                                                                
 if __name__ == '__main__':
     os.system('cls && title [The TikTok Bot]')
     main = TikTok()
     main.scrapeProxyList(1 || 2)
+      for proxy in proxy_list:
+            self.proxy(proxy)
+                 for import in self.proxy:
+                    f'{proxy_count} proxies being added'
+            sleep(5)
+            for proxy in proxy_count:
+               proxt_list = ':'.join([proxy_list.text for item in proxy_count.select(ip)])                  
+               f'{ip} is being added.'
+               #Record time took here.                                                   
+               time_remaining = os.                                                       
+                                                                  
     main.start()
