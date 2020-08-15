@@ -51,6 +51,8 @@ pip install etc. etc.
 - [ ] Incooperate another bot object, that runs inline with the main bot.
 - [ ] Finish refactoring the old share bot. 
 - [ ] Re-Write some of the methods in the TikTok class to GET the users content.
+- [x] Create a new  timer  class which holds the time_remaining/time_start method(s).
+- [ ] Create new proxy class that stores the proxy data as an object for the bot to be used/read.
 
 # License
 
