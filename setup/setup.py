@@ -15,8 +15,9 @@ def installLibraries():
    system('pip install Keys')
    system('pip install ActionsChains')
    system('pip install pygame')
+   system('pip install sys')
           
 installLibraries()
           
-print(f'\n'+'Required Libraries are now installed.')
+print(f'\n'+'All Required Libraries are now installed.')
 os.exit()
