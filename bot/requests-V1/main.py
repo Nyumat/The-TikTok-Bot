@@ -16,9 +16,24 @@ from bs4 import BeautifulSoup
                                                          print("          ███▄▄▄▄▄███████        ")
                                                          print("          ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀        ")
 
-                  
-                  
-                  
+         
+
+        
+class bot_timer(threading._Timer):
+    started_at = None
+    
+    def start(self):    
+      self.started_at = time.time()
+      threading._Timer.start(self)
+      
+    def elapsed(self):
+      return time.time() - self.started_at 
+    
+    def time_remaining(self):
+      return self.interval - self.elapsed()
+    
+timer = bot_timer(time, print, ("Time remaining")) 
+ 
 class TikTokBot:
     #A reverse engineering attempt of the orginal bot by Tqkn.    
     def __init__(self):
@@ -190,7 +205,8 @@ if __name__ == '__main__':
     os.system('cls && title [The TikTok Bot]')
     main = TikTok()
     main.scrapeProxyList(1 || 2)
-      for proxy in proxy_list:
+      timer.start()                                                                 
+      for proxy in proxy_list:                                                   
             self.proxy(proxy)
                  for import in self.proxy:
                     f'{proxy_count} proxies being added'
@@ -198,7 +214,6 @@ if __name__ == '__main__':
             for proxy in proxy_count:
                proxt_list = ':'.join([proxy_list.text for item in proxy_count.select(ip)])                  
                f'{ip} is being added.'
-               #Record time took here.                                                   
-               time_remaining = os.                                                       
+               print(timer.time_remaining())                                                   
                                                                   
     main.start()
