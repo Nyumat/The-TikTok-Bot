@@ -49,7 +49,7 @@ pip install etc. etc.
 - [ ] Add captcha bypass in selenium version
 - [x] Create a system for scraping proxies from the [freeproxylist.net](freeproxylist.net) website
 - [ ] Incooperate another bot object, that runs inline with the main bot.
-- [ ] Finish refactoring the old share bot. 
+- [x] Finish refactoring the old share bot print/input statements. 
 - [ ] Re-Write some of the methods in the TikTok class to GET the users content.
 - [x] Create a new  timer  class which holds the time_remaining/time_start method(s).
 - [ ] Create new proxy class that stores the proxy data as an object for the bot to be used/read.
