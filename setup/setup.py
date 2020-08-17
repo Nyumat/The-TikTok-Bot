@@ -7,7 +7,7 @@ def installLibraries():
    os.wait()  
   
    system('pip install requests')
-   system('pip install threading)
+   system('pip install threading')
    system('pip install bs4')
    system('pip install time')
    system('pip install math')
