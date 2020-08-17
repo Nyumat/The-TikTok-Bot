@@ -18,12 +18,14 @@ If you don't already know how to make a Python virtual enviornment, please keep 
 ```
 mkdir my-new-python-project
 cd my-new-python-project
-virtualenv --python=python(your-python-version) venv # *No parenthesis*
-# This will create a my-new-python-project/venv folder
+virtualenv --python=python(your-python-version) venv *No parenthesis*
+```
+This will create a my-new-python-project/venv folder
+```
 touch .gitignore
 subl .gitignore
-# Add venv to your .gitignore
 ```
+Adds the virtual env to your .gitignore
 Whenever you'd like to re-run the program, you have to activate the enviornment:
 ```
 lsvirtualenv - List all of your enviornments.
