@@ -46,6 +46,7 @@ pip install etc. etc.
 # To-Do's:
 
 - [ ] Add GUI to the script so that threads can be user limited.
+- [ ] Re-Do TikTokBot.py so that the user can do each ReCaptcha on each opening of a tab.
 - [ ] Implement the multiprocessing module for the ability to trigger two ports at once
 - [x] Complete Documentation
 - [ ] Add captcha bypass in selenium version
