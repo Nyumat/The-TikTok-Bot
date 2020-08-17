@@ -10,7 +10,7 @@ from time import sleep
 #Ask how many views you want
 viewsSelected = input("How many views would you like to add? : ")
 video_url = input("What is the url for the video that you would like to add the views to?")
-num_Tabs = 101000
+
 
 # Set the web browser to chrome.
 options = webdriver.ChromeOptions()
@@ -20,14 +20,14 @@ driver = webdriver.Chrome(executable_path=chrome_path, chrome_options=options)
 
 # Iteratively opens a new tab.
 def openTab(tabs):
-    open = tabs.send_keys(Keys.COMMAND, "T")
+    num_tabs = tabs
+    open_tab = tabs.send_keys(Keys.COMMAND, "T")
     close = tabs.send_keys(Keys.COMMAND, "W")
-    doThis = open + close
+    open_it = open_tab
 
 for i in range(i, num_Tabs):
-    openTab(tabs=num_Tabs)
-    
-
+    open_tab
+  
 #Clicks the URL Link Bar
 search_bar = driver.find_element_by_name("searchinput").click()
 time.sleep(1)
