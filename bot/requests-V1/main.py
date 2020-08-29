@@ -40,6 +40,7 @@ class TikTokBot:
         self.start_time = time()
         self.added = 0
         self.lock = threading.Lock()
+        self.timer = bot_timer()
 
         try:                                            
             self.amount = int(input('> View Count: '))
@@ -83,6 +84,7 @@ class TikTokBot:
             self.added += 1
             print(f'Adding Views: {intention} | {views} have been added')
             self.close('Bot run in Progress...')
+            self.timer(threading._time_remaining)
         else:
             self.lock.acquire()
             print(f'Error: {intention} | Status Code: {code}')
@@ -99,14 +101,16 @@ class TikTokBot:
                  f'title [The TikTok bot is done running.]'
                  f'[Iff you would like to run once again, please type "Run again"]'
                  f'[If you will like to exit the client, please type "Exit"]'
-              input = input()
+                 input = input()
+                 )
                   if input == "Run again":
-                        os.system(
-                             main = TikTok()
-                             # Proxy list will be an object soon so it doesn't need to be called as inside of this if statement.
-                             main.scrapeProxyList(1 || 2)
-                             main.start()
-                             sleep(5)
+                      os.system(
+                         main = TikTok()
+                         # Proxy list will be an object soon so it doesn't need to be called as inside of this if statement.
+                         main.scrapeProxyList(1 || 2)
+                         main.start()
+                         sleep(5)
+                        ) 
                   else if input == "Exit: 
                         self.close("Goodbye!")
                         os.times(user)
@@ -128,10 +132,10 @@ class TikTokBot:
                 f'{threading.active_count()} ^| Time Remaining: {time_remaining}'
             )
             sleep(0.2)
-        os.system(
-            f'title [The TikTok Bot] - Added: {self.added}/{self.amount} '
-            f'({round(((self.added / self.amount) * 100), 3)}%) ^| Active Threads: '
-            f'{threading.active_count()} ^| Time Remaining: 00:00:00'
+            os.system(
+                f'title [The TikTok Bot] - Added: {self.added}/{self.amount} '
+                f'({round(((self.added / self.amount) * 100), 3)}%) ^| Active Threads: '
+                f'{threading.active_count()} ^| Time Remaining: 00:00:00'
         )
 
     def bot(self):
