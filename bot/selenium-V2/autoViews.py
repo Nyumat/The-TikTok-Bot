@@ -1,7 +1,8 @@
 from selenium import webdriver
 from selenium.webdriver.support.ui import Select
 import time
-
+print("---------------------PATCHED---------------------")
+print("--------------------(For now)--------------------")
 # Links that through getURL will be referenced
 mainURL = "https://fireliker.com/"
 panelURL = "https://fireliker.com/welcome.php"
