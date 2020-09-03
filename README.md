@@ -1,7 +1,7 @@
 <p align="center">
   <img width="460" height="300" src="https://tricolortimes.com/wp-content/uploads/2020/02/Reviews_Larsen-Whitnie_TikTok.svg">
   
- --------- ![](https://img.shields.io/badge/license-MIT-green)![](https://img.shields.io/badge/python%40master-v3.7-blue)![](https://img.shields.io/badge/version-v2-blue)![](https://img.shields.io/badge/docs-94%25-green)![](https://img.shields.io/badge/dependencies-up%20to%20date-brightgreen)![](https://img.shields.io/github/languages/top/Nyumat/TheTikTokBot)![](https://img.shields.io/github/last-commit/Nyumat/TheTikTokBot) ---------
+ --------- ![](https://img.shields.io/badge/license-MIT-green)![](https://img.shields.io/badge/python%40master-v3.7-blue)![](https://img.shields.io/badge/version-v2-blue)![](https://img.shields.io/badge/docs-94%25-green)![](https://img.shields.io/badge/dependencies-up%20to%20date-brightgreen)![](https://img.shields.io/github/languages/top/Nyumat/TheTikTokBot)![](https://img.shields.io/github/last-commit/Nyumat/TheTikTokBot) -----
 
 <h1 align="center" style="font-size: 3rem;">The TikTok Bot</h1>
 
