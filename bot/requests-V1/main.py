@@ -5,7 +5,8 @@ import requests
 import threading
 from time import strftime, gmtime, time, sleep
 from bs4 import BeautifulSoup
-
+import logging
+                                                        
                                                          print("          ████████▀▀▀████        ")
                                                          print("          ████████────▀██        ")
                                                          print("          ████████──█▄──█        ")
@@ -35,7 +36,7 @@ class bot_timer(threading._Timer):
 timer = bot_timer(time, print, ("Time remaining")) 
  
 class TikTokBot:
-    #A reverse engineering attempt of the orginal bot by Tqkn.    
+    # Proxies are still being implemented.   
     def __init__(self):
         self.start_time = time()
         self.added = 0
@@ -50,8 +51,7 @@ class TikTokBot:
             self.video_id = input('> TikTok Video Url: ').split('/')[5]
         except IndexError:
             self.close(
-                'Invalid TikTok URL format.\nFormat expected: https://www.tiktok.com/@username/vide'
-                'o/1234567891234567891'
+                'Invalid TikTok URL format.\nFormat expected: https://www.tiktok.com/@username/video/1234567891234567891'
         try:
             self.views = int(input("> Enter an amount of Views: '))
         except ValueError:
@@ -94,7 +94,7 @@ class TikTokBot:
     def update_title(self):
        # Avoid ZeroDivisionError
                              
-       # Prompts the user to either run again                    
+       # Prompts the user to either run again...                    
        while time_remaining = '00:00:00'
             os.system(
                  f'title {views} Views have been added.)'
@@ -111,32 +111,33 @@ class TikTokBot:
                          main.start()
                          sleep(5)
                         ) 
+                  # Or exit the client.
                   else if input == "Exit: 
                         self.close("Goodbye!")
                         os.times(user)
                         sleep(3)
-                        os._exit(1)                                    
-        while self.added == 0:
-            sleep(0.2)
+                        os._exit()                                    
+            while self.added == 0:
+                sleep(0.2)
 
-        while self.added < self.amount:
-            # Elapsed Time / Added * Remaining
-            time_remaining = strftime(
-                '%H:%M:%S', gmtime(
-                    (time() - self.start_time) / self.added * (self.amount - self.added)
+            while self.added < self.amount:
+                # Elapsed Time / Added * Remaining
+                time_remaining = strftime(
+                    '%H:%M:%S', gmtime(
+                        (time() - self.start_time) / self.added * (self.amount - self.added)
+                    )
                 )
+                os.system(
+                    f'title [The TikTok Bot] - Added: {self.added}/{self.amount} '
+                    f'({round(((self.added / self.amount) * 100), 3)}%) ^| Active Threads: '
+                    f'{threading.active_count()} ^| Time Remaining: {time_remaining}'
+                )
+                sleep(0.2)
+                os.system(
+                    f'title [The TikTok Bot] - Added: {self.added}/{self.amount} '
+                    f'({round(((self.added / self.amount) * 100), 3)}%) ^| Active Threads: '
+                    f'{threading.active_count()} ^| Time Remaining: 00:00:00'
             )
-            os.system(
-                f'title [The TikTok Bot] - Added: {self.added}/{self.amount} '
-                f'({round(((self.added / self.amount) * 100), 3)}%) ^| Active Threads: '
-                f'{threading.active_count()} ^| Time Remaining: {time_remaining}'
-            )
-            sleep(0.2)
-            os.system(
-                f'title [The TikTok Bot] - Added: {self.added}/{self.amount} '
-                f'({round(((self.added / self.amount) * 100), 3)}%) ^| Active Threads: '
-                f'{threading.active_count()} ^| Time Remaining: 00:00:00'
-        )
 
     def bot(self):
         action_time = round(time())
@@ -177,6 +178,7 @@ class TikTokBot:
                 if threading.active_count() <= 300:
                   threading.Thread(target=self.bot).start()
                     break if: # Views have more breakpoints
+                            !isAlive()
                             self.bot(closed)
                             self.added(true)
                             self.lock = threading.Lock()
@@ -201,13 +203,16 @@ class TikTokBot:
                        proxy_count = proxylist.count                                                
                   for proxy in  proxy_list: 
                         while(list_printing == true):                                                         
-                        empty_list.append(proxy_list)                                                         
- 
+                        empty_list.append(proxy_list)                                              
+                         if list_printing != True:
+                              time.sleep(timer.time_remaining)
+                              logging.basicConfig(format='%(asctime)s - %(message)s', level=logging.INFO)
+                              logging.warning("Error -- Proxies are not being imported.")                                              
                                                                        
 # Client & Program initializer.                                                                                                
 if __name__ == '__main__':
     os.system('cls && title [The TikTok Bot]')
-    main = TikTok()
+    main = TikTokBot()
     main.scrapeProxyList(1 || 2)
       timer.start()                                                                 
       for proxy in proxy_list:                                                   
@@ -218,6 +223,7 @@ if __name__ == '__main__':
             for proxy in proxy_count:
                proxt_list = ':'.join([proxy_list.text for item in proxy_count.select(ip)])                  
                f'{ip} is being added as a proxy.'
-               print(timer.time_remaining())                                                   
-               time.sleep(0.1)                                                   
+               for second in timer.time_remaining                                                   
+                 print(timer.time_remaining())                                                   
+                                                              
     main.start()
