@@ -1,10 +1,11 @@
 import os
+import time
 from os import system
 
 def installLibraries():
     
    print(f'Installing Libraries....')
-   os.wait()  
+   time.sleep(45)
   
    system('pip install requests')
    system('pip install threading')
@@ -14,9 +15,9 @@ def installLibraries():
    system('pip install selenium')
    system('pip install Keys')
    system('pip install ActionsChains')
-   system('pip install pygame')
    system('pip install sys')
    system('pip install multiprocessing')
+   system('pip install logging')
           
 installLibraries()
           
