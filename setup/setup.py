@@ -1,25 +1,22 @@
 import os
-import time
-from os import system
 
 def installLibraries():
     
-   print(f'Installing Libraries....')
-   time.sleep(45)
-  
-   system('pip install requests')
-   system('pip install threading')
-   system('pip install bs4')
-   system('pip install time')
-   system('pip install math')
-   system('pip install selenium')
-   system('pip install Keys')
-   system('pip install ActionsChains')
-   system('pip install sys')
-   system('pip install multiprocessing')
-   system('pip install logging')
+        print(f'Installing Libraries....')
+        
+        os.system('pip install requests')
+        os.system('pip install threading')
+        os.system('pip install bs4')
+        os.system('pip install time')
+        os.system('pip install math')
+        os.system('pip install selenium')
+        os.system('pip install Keys')
+        os.system('pip install ActionsChains')
+        os.system('pip install sys')
+        os.system('pip install multiprocessing')
+        os.system('pip install logging')
+        os.system('pip install glob')
           
-installLibraries()
-          
-print(f'\n'+'All Required Libraries are now installed.')
-os.exit()
+if __name__ == "__main__":
+    installLibraries()
+    print(f'\n'+'All Required Libraries are now installed.')
