@@ -7,18 +7,20 @@ from time import strftime, gmtime, time, sleep
 from bs4 import BeautifulSoup
 import logging
                                                         
-                                                         print("          ████████▀▀▀████        ")
-                                                         print("          ████████────▀██        ")
-                                                         print("          ████████──█▄──█        ")
-                                                         print("          ███▀▀▀██──█████        ")
-                                                         print("          █▀──▄▄██──█████        ")
-                                                         print("          █──█████──█████        ")
-                                                         print("          █▄──▀▀▀──▄█████        ")
-                                                         print("          ███▄▄▄▄▄███████        ")
-                                                         print("          ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀        ")
+print("          ████████▀▀▀████        ")
+print("          ████████────▀██        ")
+print("          ████████──█▄──█        ")
+print("          ███▀▀▀██──█████        ")
+print("          █▀──▄▄██──█████        ")
+print("          █──█████──█████        ")
+print("          █▄──▀▀▀──▄█████        ")
+print("          ███▄▄▄▄▄███████        ")
+print("          ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀        ")
 
          
+# NOT WORKING AS OF 9/25/2020.
 
+# I will be creating a new alternate solution but for now, I reccomend the online services such as vipto.de and mytoolstown.com
         
 class bot_timer:
     
@@ -47,35 +49,33 @@ class TikTokBot:
         self.added = 0
         self.lock = threading.Lock()
         self.timer = bot_timer()
-        self.amount = amount
-    global amount
-        try:                                            
-            self.amount = int(input('>> View Count: '))
-        except ValueError:
-            self.close('Integer Expected.')
-        try:
-            self.video_id = input('>> TikTok Video Url: ').split('/')[5]
-        except IndexError:
+    try:                                            
+        self.amount = int(input('> View Count: '))
+    except ValueError:
+        self.close('Integer expected.')
+    try:
+        self.video_id = input('> TikTok Video Url: ').split('/')[5]
+    except IndexError:
+        self.close(
+            'Invalid TikTok URL format.\nFormat expected: https://www.tiktok.com/@username/video/1234567891234567891'
+    if True:
+        self.views = int(input("> Enter an amount of Views: '))
+    except ValueError:
+        self.close("Integer expected.")
+            try:
+                self.reload_do = self.lock = threading.Lock()
+            except scriptError: 
+                self.close("Please reload the Client.")
+            
+        )
+    else:
+        if not self.video_id.isdigit():
             self.close(
-                '~ Erorr! Invalid TikTok URL format.\nFormat expected: https://www.tiktok.com/@username/vid_code/1234567891234567891 ~'
-        try:
-            self.views = int(input(">> Enter an amount of Views: '))
-        except ValueError:
-            self.close("~ Error! Integer expected. ~")
-                try:
-                    self.reload_do = self.lock = threading.Lock()
-                except scriptError: 
-                    self.close("~ Error! Please reload the Client. ~")
-                
+                'Invalid TikTok URL format.\nFormat expected: https://www.tiktok.com/@username/'
+                'video/1234567891234567891'
             )
         else:
-            if not self.video_id.isdigit():
-                self.close(
-                    'Invalid TikTok URL format.\nFormat expected: https://www.tiktok.com/@username/'
-                    'video/1234567891234567891'
-                )
-            else:
-                print()
+            print()
 
     def close(self, message):
         print(f'\n{message}')
@@ -98,8 +98,7 @@ class TikTokBot:
             self.bot()
 
     def update_title(self):
-       # Avoid ZeroDivisionError
-                             
+       # Avoid ZeroDivisionError                
        # Prompts the user to either run again...                    
        while bot_timer.time_remaining() = '00:00:00'
             os.system(
@@ -146,6 +145,7 @@ class TikTokBot:
             )
 
     def bot(self):
+        # Defines the bots userAgent, Keys, and headers.
         action_time = round(time())
         device_id = ''.join(random.choice('0123456789') for _ in range(19))
 
@@ -234,15 +234,19 @@ if __name__ == '__main__':
     logging.basicConfig(format='%(asctime)s - %(message)s', level=logging.INFO)
     timer = bot_timer()                                                                   
     main = TikTokBot()
-    main.scrapeProxyList(1 || 2)                                                                
-      for proxy in proxy_list:                                                   
-            
-                 for import in proxy:
+    main.scrapeProxyList(1 || 2)
+    timer.start()                                                                 
+    for proxy in proxy_list:                                                   
+        self.proxy(proxy)
+                for import in self.proxy:
+                    while True:
                     f'{proxy_count} proxies being added'
-            sleep(5)
-            for proxy in proxy_count:
-               proxt_list = ':'.join([proxy_list.text for item in proxy_count.select(proxy)]) 
-               f'{proxy} is being added as a proxy.'
-               time.sleep(amount)                                                         
+                    break
+        sleep(5)
+        for proxy in proxy_count:
+            proxt_list = ':'.join([proxy_list.text for ip in proxy_count.select(ip)])                  
+            f'{ip} is being added as a proxy.'
+            for second in timer.time_remaining                                                   
+                print(timer.time_remaining())                                                   
                                                               
     main.start()
