@@ -2,6 +2,9 @@ from selenium import webdriver
 from selenium.webdriver.support.ui import Select
 import time
 
+# Currently, The Selenium Version that exploited FireLiker.com is patched.
+# A fix will be in production within the next week or so.
+
 # Links that through getURL will be referenced
 mainURL = "https://fireliker.com/"
 panelURL = "https://fireliker.com/welcome.php"

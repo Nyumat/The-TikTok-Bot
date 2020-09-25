@@ -7,18 +7,20 @@ from time import strftime, gmtime, time, sleep
 from bs4 import BeautifulSoup
 import logging
                                                         
-                                                         print("          ████████▀▀▀████        ")
-                                                         print("          ████████────▀██        ")
-                                                         print("          ████████──█▄──█        ")
-                                                         print("          ███▀▀▀██──█████        ")
-                                                         print("          █▀──▄▄██──█████        ")
-                                                         print("          █──█████──█████        ")
-                                                         print("          █▄──▀▀▀──▄█████        ")
-                                                         print("          ███▄▄▄▄▄███████        ")
-                                                         print("          ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀        ")
+print("          ████████▀▀▀████        ")
+print("          ████████────▀██        ")
+print("          ████████──█▄──█        ")
+print("          ███▀▀▀██──█████        ")
+print("          █▀──▄▄██──█████        ")
+print("          █──█████──█████        ")
+print("          █▄──▀▀▀──▄█████        ")
+print("          ███▄▄▄▄▄███████        ")
+print("          ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀        ")
 
          
+# NOT WORKING AS OF 9/25/2020.
 
+# I will be creating a new alternate solution but for now, I reccomend the online services such as vipto.de and mytoolstown.com
         
 class bot_timer(threading._Timer):
     started_at = None
@@ -43,33 +45,33 @@ class TikTokBot:
         self.lock = threading.Lock()
         self.timer = bot_timer()
 
-        try:                                            
-            self.amount = int(input('> View Count: '))
-        except ValueError:
-            self.close('Integer expected.')
-        try:
-            self.video_id = input('> TikTok Video Url: ').split('/')[5]
-        except IndexError:
+    try:                                            
+        self.amount = int(input('> View Count: '))
+    except ValueError:
+        self.close('Integer expected.')
+    try:
+        self.video_id = input('> TikTok Video Url: ').split('/')[5]
+    except IndexError:
+        self.close(
+            'Invalid TikTok URL format.\nFormat expected: https://www.tiktok.com/@username/video/1234567891234567891'
+    if True:
+        self.views = int(input("> Enter an amount of Views: '))
+    except ValueError:
+        self.close("Integer expected.")
+            try:
+                self.reload_do = self.lock = threading.Lock()
+            except scriptError: 
+                self.close("Please reload the Client.")
+            
+        )
+    else:
+        if not self.video_id.isdigit():
             self.close(
-                'Invalid TikTok URL format.\nFormat expected: https://www.tiktok.com/@username/video/1234567891234567891'
-        try:
-            self.views = int(input("> Enter an amount of Views: '))
-        except ValueError:
-            self.close("Integer expected.")
-                try:
-                    self.reload_do = self.lock = threading.Lock()
-                except scriptError: 
-                    self.close("Please reload the Client.")
-                
+                'Invalid TikTok URL format.\nFormat expected: https://www.tiktok.com/@username/'
+                'video/1234567891234567891'
             )
         else:
-            if not self.video_id.isdigit():
-                self.close(
-                    'Invalid TikTok URL format.\nFormat expected: https://www.tiktok.com/@username/'
-                    'video/1234567891234567891'
-                )
-            else:
-                print()
+            print()
 
     def close(self, message):
         print(f'\n{message}')
@@ -140,6 +142,7 @@ class TikTokBot:
             )
 
     def bot(self):
+        # Defines the bots userAgent, Keys, and headers.
         action_time = round(time())
         device_id = ''.join(random.choice('0123456789') for _ in range(19))
 
@@ -214,16 +217,18 @@ if __name__ == '__main__':
     os.system('cls && title [The TikTok Bot]')
     main = TikTokBot()
     main.scrapeProxyList(1 || 2)
-      timer.start()                                                                 
-      for proxy in proxy_list:                                                   
-            self.proxy(proxy)
-                 for import in self.proxy:
+    timer.start()                                                                 
+    for proxy in proxy_list:                                                   
+        self.proxy(proxy)
+                for import in self.proxy:
+                    while True:
                     f'{proxy_count} proxies being added'
-            sleep(5)
-            for proxy in proxy_count:
-               proxt_list = ':'.join([proxy_list.text for item in proxy_count.select(ip)])                  
-               f'{ip} is being added as a proxy.'
-               for second in timer.time_remaining                                                   
-                 print(timer.time_remaining())                                                   
+                    break
+        sleep(5)
+        for proxy in proxy_count:
+            proxt_list = ':'.join([proxy_list.text for ip in proxy_count.select(ip)])                  
+            f'{ip} is being added as a proxy.'
+            for second in timer.time_remaining                                                   
+                print(timer.time_remaining())                                                   
                                                               
     main.start()
