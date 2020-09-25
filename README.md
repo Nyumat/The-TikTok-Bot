@@ -5,6 +5,8 @@
 
 <h1 align="center" style="font-size: 3rem;">The TikTok Bot</h1>
 
+<h1 align="center"> [Down Temporarily]</h1>
+
 <b><p align="center">Disclaimer: This bot is for educational purposes, only.</p></b>
 
 # How to run the program(s)
@@ -41,8 +43,6 @@ pip install etc. etc.
 ```
 *Once you do this you'll finally be good to go!*
 
-### Keep in mind - the code is still being refactored and will NOT be functioning yet.
-
 # To-Do's:
 
 - [ ] Add GUI to the script so that threads can be user limited.
@@ -51,7 +51,7 @@ pip install etc. etc.
 - [x] Complete Documentation
 - [ ] Add captcha bypass in selenium version
 - [x] Create a system for scraping proxies from the [freeproxylist.net](freeproxylist.net) website
-- [ ] Incooperate another bot object, that runs inline with the main bot.
+- [x] Incooperate another bot object, that runs inline with the main bot to store time data.
 - [x] Finish refactoring the old share bot print/input statements. 
 - [x] Re-Write some of the methods in the TikTok class to GET the users content.
 - [x] Create a new  timer  class which holds the time_remaining/time_start method(s).
