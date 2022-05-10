@@ -5,7 +5,10 @@
 
 <h1 align="center" style="font-size: 3rem;">The TikTok Bot</h1>
 
-<h1 align="center"> [Down Temporarily]</h1>
+<h1 align="center"> [PATCHED] 😔 </h1>
+
+<h1 align="center"> See <a href="https://github.com/Nyumat/The-TikTok-Bot/issues/11"> here</a>
+  and <a href="https://github.com/Nyumat/The-TikTok-Bot/issues/10"> here</a> for why, and, what's next for this Project.</h1>
 
 <b><p align="center">Disclaimer: This bot is for educational purposes, only.</p></b>
 
